@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:hello/list_grid_view/GridProduct.dart';
+import 'package:hello/list_grid_view/Grid_basic.dart';
+import 'package:hello/list_grid_view/Instagram.dart';
+import 'package:hello/list_grid_view/Instagram1.dart';
 import 'package:hello/sized_expanded_stack/LatihanLayout.dart';
 import 'package:hello/sized_expanded_stack/LatihanTiga.dart';
 import 'package:hello/list_grid_view/ListView.dart';
@@ -15,7 +19,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: const ContohListView(),
+        body: const GridHomePage(),
       ),
     );
   }
