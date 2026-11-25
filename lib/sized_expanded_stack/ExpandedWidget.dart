@@ -5,8 +5,11 @@ class Expandedwidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: [
+    
+    return Scaffold(
+      appBar: AppBar(title: Text('About Page')),
+      body: Column(
+       children : [
         Container(color: Colors.black, width: 100,),
         Expanded(
           flex: 1,
@@ -21,6 +24,14 @@ class Expandedwidget extends StatelessWidget {
           child: Container(color: Colors.blue, height: 50, child: Text("Tiga"),),
         ),
       ],
+        
+      ),
+      
+
+      
+      
     );
+
+      
   }
 }

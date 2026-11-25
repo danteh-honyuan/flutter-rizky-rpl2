@@ -6,10 +6,16 @@ class GridBasic extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
+    
+
     var mediaQueryData = MediaQuery.of(context);
     final double widthScreen = mediaQueryData.size.width;
     final double heightScreen = mediaQueryData.size.width;
     return Container(
+
+      
+      
+      
       padding: EdgeInsets.all(10),
       child: GridView.count(
         crossAxisCount: 4,
@@ -46,7 +52,14 @@ class GridBasic extends StatelessWidget {
                 color: Colors.green
             ),
           ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.pop(context);
+            },
+            child: Text('Kembali'),
+          ),
         ],
+        
       )
     );
   }
